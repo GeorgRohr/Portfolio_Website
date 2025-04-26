@@ -1,0 +1,129 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    cursor: url('dot_single.png'), auto;
+    font-size: 100%;
+    font-family: "Arial";
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    overflow-y: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1 {
+    white-space: nowrap; 
+    margin-inline-start: -250px;
+    overflow-x: hidden;
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: max(5vh, 15px);
+    text-transform: uppercase;
+}
+
+h2 {
+    white-space: nowrap; 
+    margin-inline-start: -250px;
+    overflow-x: hidden;
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: max(5vh, 15px);
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px;
+}
+
+h2:hover{
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0px;
+}
+
+a {
+    white-space: nowrap; 
+    margin-inline-start: -250px;
+    overflow-x: hidden;
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: max(5vh, 15px);
+    text-transform: uppercase;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Header{
+    align-items: center;
+    justify-content: center;
+    flex-basis: 6vh;
+    width: 100vw;
+    z-index: 100;
+}
+
+.HeaderText{
+    display: flex;
+    justify-content: center;
+}
+
+.textModule{
+    flex-basis: 11vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    z-index: 100;
+}
+
+.Text{
+    font-size: 2vh;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: left;
+    font-weight: 400;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.About{
+    font-size: 2vh;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: left;
+    font-weight: 400;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.pictureModule{
+    overflow-y: scroll;
+    -webkit-text-fill-color: black;
+}
+
+.pictureModule:hover{
+    cursor: url('bar_single.png'), auto;
+}
+
+.picGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    z-index:1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
