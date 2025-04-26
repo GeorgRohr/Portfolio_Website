@@ -1,24 +1,4 @@
-@media only screen and (max-width: 600px) {
-    body {
-      min-height: 100vh;
-      /* mobile viewport bug fix */
-      min-height: -webkit-fill-available;
-    }
-    
-    html {
-      height: -webkit-fill-available;
-    }
-
-    .Text{
-        font-size: 0.75vh;
-    }
-    .About{
-        font-size: 0.75vh;
-    }
-
-}
-
-
+@media only screen and (min-width: 600px) {
 body{
     margin: 0px;
     padding: 0px;
@@ -148,3 +128,24 @@ a {
     width: 0px;
   }
 
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      min-height: 100vh;
+      /* mobile viewport bug fix */
+      min-height: -webkit-fill-available;
+    }
+    
+    html {
+      height: -webkit-fill-available;
+    }
+
+    .Text{
+        font-size: 0.75vh;
+    }
+    .About{
+        font-size: 0.75vh;
+    }
+
+}
