@@ -97,7 +97,7 @@ h1 {
     font-weight: bold;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px; 
-    color: rgb(0, 0, 0);
+    color: rgb(150, 150, 150);
     font-size: max(10vh, 10px);
     width: 100%;
     margin: 0px;
