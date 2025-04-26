@@ -26,7 +26,7 @@ img{
 a{
     color: black;
     text-transform: uppercase;
-    font-size: max(1vh, 8px);
+    font-size: max(1dvh, 8px);
     font-weight: bold;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.5px;
@@ -44,7 +44,7 @@ h1 {
     margin: 0px;
     padding: 0px;
     margin-inline-start: -270px;
-    font-size: max(2vh, 5px);
+    font-size: max(2dvh, 5px);
 }
 
 .flex{
@@ -53,8 +53,8 @@ h1 {
     column-gap: 5px;
     position: relative;
     text-align: center;
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
 }
 
 .Header{
@@ -62,14 +62,14 @@ h1 {
     text-align: center;
     align-items: center;
     justify-content: center;
-    top: 0vh;
-    height: 6vh;
-    width: 100vw;
+    top: 0dvh;
+    height: 6dvh;
+    width: 100dvw;
     z-index: 100;
 }
 
 .Picture{
-    top: 6vh;
+    top: 6dvh;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -79,11 +79,11 @@ h1 {
 }
 
 .picture-open{
-    height: 82vh;
+    height: 82dvh;
 }
 
 .picture-closed{
-    height: 6vh;
+    height: 6dvh;
     transition: 500ms linear;
 }
 
@@ -98,7 +98,7 @@ h1 {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1.5px; 
     color: rgb(150, 150, 150);
-    font-size: max(10vh, 10px);
+    font-size: max(10dvh, 10px);
     width: 100%;
     margin: 0px;
     white-space: nowrap;
@@ -110,10 +110,10 @@ h1 {
 
 .picBand-top{
     transform: scale(0.25,0.25);
-    height: 0vh;
+    height: 0dvh;
     transition: 500ms linear;
     -webkit-text-stroke: 3px;
-    top: 0vh;
+    top: 0dvh;
 }
 
 .picBand-filled{
@@ -126,7 +126,7 @@ h1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
-    height: 44vh;
+    height: 44dvh;
     z-index: 4;
     overflow-y: hidden;
     transition: 500ms linear;
@@ -137,14 +137,14 @@ h1 {
     position: absolute;
     flex-direction: row;
     z-index: 4;
-    height: 44vh;
+    height: 44dvh;
     overflow-x: hidden;
     transition: 500ms linear;
 }
 
 .picGrid-open{
-    margin-top: 6vh;
-    height: 76vh;
+    margin-top: 6dvh;
+    height: 76dvh;
     overflow-y: scroll;
 }
 
@@ -157,23 +157,23 @@ h1 {
     position: fixed;
     align-items: center;
     justify-content: center;
-    top: 50vh;
-    height: 44vh;
-    width: 100vw;
+    top: 50dvh;
+    height: 44dvh;
+    width: 100dvw;
     z-index: 100;
     transition: 500ms linear;
     background-color: white;
 }
 
 .list-closed{
-    top: 88vh;
-    height: 6vh;
+    top: 88dvh;
+    height: 6dvh;
     transition: 500ms linear;
 }
 
 .list-open{
-    top: 12vh;
-    height: 82vh;
+    top: 12dvh;
+    height: 82dvh;
 }
 
 
@@ -181,7 +181,7 @@ h1 {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 9vh;
+    top: 9dvh;
     width: 100%;
     z-index: 1000;
     transition: 500ms linear;
@@ -191,11 +191,11 @@ h1 {
     white-space: nowrap; 
     color: rgb(0, 0, 0);
     margin: 0px;
-    font-size: max(20vh, 60px);
+    font-size: max(20dvh, 60px);
 }
 
 .listBand-closed{
-    top: -8vh;
+    top: -8dvh;
     transform: scale(0.25,0.25);
     -webkit-text-stroke: 3px;
 }
@@ -213,9 +213,9 @@ h1 {
 .listList{
     position: absolute;
     flex-direction: column;
-    top: 2vh;
-    height: 44vh;
-    width: 100vw;
+    top: 2dvh;
+    height: 44dvh;
+    width: 100dvw;
     z-index: 2;
     overflow-x: hidden;
 }
@@ -225,24 +225,24 @@ h1 {
 }
 
 .listList-open{
-    margin-top: 6vh;
-    height: 76vh;
+    margin-top: 6dvh;
+    height: 76dvh;
     overflow-y: scroll;
 }
 
 .Listeneintrag{
     border-bottom: 2px solid rgb(200, 200, 200);
-    height: 6vh;
+    height: 6dvh;
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: 1vh;
-    margin-right: 1vh;
+    margin-left: 1dvh;
+    margin-right: 1dvh;
 }
 
 .Listeninfo{
     text-transform: uppercase;
-    font-size: max(2vh, 15px);
+    font-size: max(2dvh, 15px);
     font-weight: bold;
     color:rgb(68, 68, 68);
     
@@ -252,7 +252,7 @@ h1 {
 .pl{
     position: absolute;
     text-align: left;
-    left: 1vh;
+    left: 1dvh;
 }
 
 .pm{
@@ -264,7 +264,7 @@ h1 {
 .pr{
     position: absolute;
     text-align: center;
-    right: 1vh;
+    right: 1dvh;
     
 }
 
@@ -274,9 +274,9 @@ h1 {
     position: fixed;
     text-align: center;
     justify-content: center;
-    top: 94vh;
-    height: 6vh;
-    width: 100vw;
+    top: 94dvh;
+    height: 6dvh;
+    width: 100dvw;
     z-index: 1000;
     transition: 500ms linear;
     background-color: white;
@@ -290,8 +290,8 @@ h1 {
 }
 
 .about-open{
-    top: 50vh;
-    height: 50vh;
+    top: 50dvh;
+    height: 50dvh;
     transition: 500ms linear;
     -webkit-text-fill-color: black;
     -webkit-text-stroke: 0px;
@@ -299,11 +299,11 @@ h1 {
 
 .aboutText{
     position: fixed;
-    top: 56vh;
+    top: 56dvh;
     margin-top: 5px;
-    margin-left: 2vh;
-    margin-right: 2vh;
-    font-size: 2vh;
+    margin-left: 2dvh;
+    margin-right: 2dvh;
+    font-size: 2dvh;
     text-transform: uppercase;
     text-align: justify;
     text-align-last: left;
@@ -319,6 +319,8 @@ h1 {
     width: 0px;
   }
 }
+
+
 
 @media only screen and (min-width: 600px) {
     
@@ -637,3 +639,4 @@ h1 {
     width: 0px;
   }   
 }
+
