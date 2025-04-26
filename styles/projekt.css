@@ -130,6 +130,7 @@ a {
 
 }
 
+
 @media only screen and (max-width: 600px) {
     body{
     margin: 0px;
@@ -259,7 +260,5 @@ a {
 ::-webkit-scrollbar {
     width: 0px;
   }
-
-}
 
 }
