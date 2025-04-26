@@ -9,6 +9,13 @@
       height: -webkit-fill-available;
     }
 
+    .Text{
+        font-size: 0.75vh;
+    }
+    .About{
+        font-size: 0.75vh;
+    }
+
 }
 
 
