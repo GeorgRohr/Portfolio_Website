@@ -26,6 +26,10 @@ createList();
 
 var transitionEnd = whichTransitionEvent();
 
+window.onresize = function() {
+    document.body.height = window.innerHeight;
+}
+window.onresize()
 
 $(document).ready(function(){
     $(".Picture").click(function(){
