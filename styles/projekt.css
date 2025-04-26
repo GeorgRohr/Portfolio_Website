@@ -24,7 +24,7 @@ h1 {
     font-size: 100%;
     margin: 0px;
     padding: 0px;
-    font-size: max(5vh, 15px);
+    font-size: max(5dvh, 15px);
     text-transform: uppercase;
 }
 
@@ -35,7 +35,7 @@ h2 {
     font-size: 100%;
     margin: 0px;
     padding: 0px;
-    font-size: max(5vh, 15px);
+    font-size: max(5dvh, 15px);
     text-transform: uppercase;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.75px;
@@ -53,23 +53,23 @@ a {
     font-size: 100%;
     margin: 0px;
     padding: 0px;
-    font-size: max(5vh, 15px);
+    font-size: max(5dvh, 15px);
     text-transform: uppercase;
 }
 
 .flex{
     display: flex;
     flex-direction: column;
-    row-gap: 1vh;
-    width: 100vw;
-    height: 100vh;
+    row-gap: 1dvh;
+    width: 100dvw;
+    height: 100dvh;
 }
 
 .Header{
     align-items: center;
     justify-content: center;
-    flex-basis: 6vh;
-    width: 100vw;
+    flex-basis: 6dvh;
+    width: 100dvw;
     z-index: 100;
 }
 
@@ -79,31 +79,31 @@ a {
 }
 
 .textModule{
-    flex-basis: 11vh;
+    flex-basis: 11dvh;
     display: flex;
     flex-direction: column;
-    row-gap: 1vh;
+    row-gap: 1dvh;
     z-index: 100;
 }
 
 .Text{
-    font-size: 2vh;
+    font-size: 2dvh;
     text-transform: uppercase;
     text-align: justify;
     text-align-last: left;
     font-weight: 400;
-    margin-left: 2vh;
-    margin-right: 2vh;
+    margin-left: 2dvh;
+    margin-right: 2dvh;
 }
 
 .About{
-    font-size: 2vh;
+    font-size: 2dvh;
     text-transform: uppercase;
     text-align: justify;
     text-align-last: left;
     font-weight: 400;
-    margin-left: 2vh;
-    margin-right: 2vh;
+    margin-left: 2dvh;
+    margin-right: 2dvh;
 }
 
 .pictureModule{
