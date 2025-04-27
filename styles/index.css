@@ -104,7 +104,7 @@ h1 {
 }
 
 .picBand-top{
-    transform: scale(0.2,0.2);
+    transform: scale(0.3125,0.3125);
     height: 0dvh;
     transition: 500ms linear;
     -webkit-text-stroke: 3px;
@@ -195,7 +195,7 @@ h1 {
 
 .listBand-closed{
     top: -8vh;
-    transform: scale(0.2,0.2);
+    transform: scale(0.3125,0.3125);
     -webkit-text-stroke: 3px;
 }
 
