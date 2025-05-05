@@ -194,7 +194,7 @@ h1 {
 }
 
 .listBand-closed{
-    top: -8vh;
+    top: 0vh;
     transform: scale(0.3125, 0.3125);
     -webkit-text-stroke: 3px;
 }
