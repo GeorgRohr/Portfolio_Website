@@ -99,7 +99,8 @@
     }
     
     .backModule{
-        position: relative;
+        position: fixed;
+        display: flex;
         text-align: center;
         justify-content: center;
         bottom: 0vh;
@@ -227,14 +228,14 @@
     }
     
     .backModule{
-        position: relative;
+        position: fixed;
+        display: flex;
         text-align: center;
         justify-content: center;
-        top: 94dvh;
-        width: 100dvw;
         bottom: 0vh;
         z-index: 1000;
         background-color: white;
+        width: 100dvw;
     }
 
     .About{
