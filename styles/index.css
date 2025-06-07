@@ -71,6 +71,7 @@ h1 {
     position: relative;
     z-index: 10;
     transition: 500ms linear;
+    overflow-x:hidden;
 }
 
 .picture-open{
@@ -312,6 +313,7 @@ h1 {
     text-align-last: left;
     font-weight: 400;
     visibility: hidden;
+    overflow-y: scroll;
 }
 
 .aboutText-open{
