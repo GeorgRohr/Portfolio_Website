@@ -68,7 +68,7 @@ h1 {
     align-items: center;
     justify-content: center;
     display: flex;
-    position: relative;
+    position: fixed;
     z-index: 10;
     transition: 500ms linear;
     overflow-x:hidden;
