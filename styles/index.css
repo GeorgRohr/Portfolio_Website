@@ -72,6 +72,7 @@ h1 {
     z-index: 10;
     transition: 500ms linear;
     overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 .picture-open{
