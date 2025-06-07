@@ -26,10 +26,6 @@ createList();
 
 var transitionEnd = whichTransitionEvent();
 
-window.onresize = function() {
-    document.body.height = window.innerHeight;
-}
-window.onresize()
 
 $(document).ready(function(){
     $(".Picture").click(function(){
@@ -154,12 +150,22 @@ $(document).ready(function(){
 
 function createGridwithHref(){
     projectList.forEach((project) => {
-    for(x = 0; x<project.picNum; x++){
-        let html = `<a href="${project.name}.html">
-                    <img src="images/${project.name}-${x}.jpg">
-                    </a>`
-        console.log(`${project.name}-${x}`);
-        htmlGrid += html;
+        if(project.listEintrag == true){
+            for(x = 0; x<project.picNum; x++){
+                let html = `<a href="${project.name}.html">
+                            <img src="images/${project.name}-${x}.jpg">
+                            </a>`
+                console.log(`${project.name}-${x}`);
+                htmlGrid += html;
+                };
+        }
+        else{
+            for(x = 0; x<project.picNum; x++){
+                let html = `<div class="grid-inhalt js-image">
+                            <img src="images/${project.name}-${x}.jpg">
+                            </div>`
+                htmlGrid += html;
+                };
         };
     });
     document.querySelector('.js-grid').innerHTML = htmlGrid;
