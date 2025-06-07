@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (min-height: 501px) {
     
 body{
     margin: 0px;
@@ -75,6 +75,10 @@ h1 {
 
 .picture-open{
     height: 90dvh;
+}
+
+.picture-open:hover{
+    cursor: url('bar_single.png'), auto;
 }
 
 .picture-closed{
@@ -319,7 +323,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 501px) {
     
 body{
     margin: 0px;
@@ -397,6 +401,10 @@ h1 {
 
 .picture-open{
     height: 82vh;
+}
+
+.picture-open:hover{
+    cursor: url('bar_single.png'), auto;
 }
 
 .picture-closed{
@@ -627,6 +635,639 @@ h1 {
     margin-left: 2vh;
     margin-right: 2vh;
     font-size: 2vh;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: left;
+    font-weight: 400;
+    visibility: hidden;
+}
+
+.aboutText-open{
+    visibility: visible;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }   
+}
+@media only screen and (max-height: 500px) {
+    
+body{
+    margin: 0px;
+    padding: 0px;
+    cursor: url('dot_single.png'), auto;
+    font-size: 100%;
+    font-family: "Arial";
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px;
+}
+
+a:hover{
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0px;
+}
+
+h1 {
+    white-space: nowrap; 
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-inline-start: -270px;
+    font-size: 25px;
+    display: block;
+}
+
+.flex{
+    text-align: center;
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+}
+
+.Header{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 0vh;
+    height: 30px;
+    width: 100vw;
+    z-index: 100;
+}
+
+.Picture{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: 500ms linear;
+    height: 220px;
+}
+
+.picture-open{
+    height: 410px;
+}
+
+.picture-open:hover{
+    cursor: url('bar_single.png'), auto;
+}
+
+.picture-closed{
+    height: 30px;
+    transition: 500ms linear;
+}
+
+.picBand{    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    transform-origin: center, center;
+    transition: 500ms linear;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px; 
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    width: 100%;
+    margin: 0px;
+    white-space: nowrap;
+}
+
+.picBand:hover{
+    -webkit-text-fill-color:black;
+}
+
+.picBand-top{
+    transform: scale(0.25,0.25);
+    height: 0px;
+    transition: 500ms linear;
+    -webkit-text-stroke: 3px;
+    top: 0px;
+}
+
+.picBand-filled{
+    -webkit-text-fill-color:black;
+    -webkit-text-stroke: 0px;
+}
+
+.picGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 220px;
+    z-index: 4;
+    transition: 500ms linear;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.5;
+    overflow-y: hidden;
+}
+
+.picGrid-flex{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    z-index: 4;
+    height: 220px;
+    transition: 500ms linear;
+}
+
+.picGrid-open{
+    margin-top: 30px;
+    height: 380px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+
+
+.picGrid-closed{
+    visibility: hidden;
+}
+
+
+.List{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    width: 100vw;
+    z-index: 100;
+    transition: 500ms linear;
+    background-color: white;
+}
+
+.list-closed{
+    height: 30px;
+    transition: 500ms linear;
+}
+
+.list-open{
+    height: 410px;
+}
+
+
+.listBand{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    z-index: 1000;
+    transition: 500ms linear;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px;
+    white-space: nowrap; 
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    font-size: 100px;
+}
+
+.listBand-closed{
+    top: -40px;
+    transform: scale(0.25,0.25);
+    -webkit-text-stroke: 3px;
+}
+
+.listBand-filled{
+    -webkit-text-fill-color:black;
+    -webkit-text-stroke: 0px;
+}
+
+.listBand:hover{
+    -webkit-text-fill-color:black;
+    -webkit-text-stroke: 0px;
+}
+
+.listList{
+    position: absolute;
+    flex-direction: column;
+    top: 10px;
+    height: 220px;
+    width: 100vw;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.listList-closed{
+    visibility:hidden;
+}
+
+.listList-open{
+    margin-top: 30px;
+    height: 380px;
+    opacity: 1;
+}
+
+.Listeneintrag{
+    border-bottom: 2px solid rgb(200, 200, 200);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Listeninfo{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color:rgb(68, 68, 68);
+}
+
+.pl{
+    position: absolute;
+    text-align: left;
+    left: 10px;
+}
+
+.pm{
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+.pr{
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    
+}
+
+
+.About{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+    width: 100vw;
+    z-index: 1000;
+    transition: 500ms linear;
+ 
+}
+
+.aboutBand{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.aboutText{
+    position: relative;
+    top: 30px;
+    bottom: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: justify;
+    text-align-last: left;
+    font-weight: 400;
+    z-index: 2000;
+    visibility: visible;
+}
+
+.aboutText-open{
+    visibility: visible;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+  }   
+}
+
+/*
+@media only screen and (max-height: 500px) {
+    
+body{
+    margin: 0px;
+    padding: 0px;
+    cursor: url('dot_single.png'), auto;
+    font-size: 100%;
+    font-family: "Arial";
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    overscroll-behavior: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    color: black;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px;
+}
+
+a:hover{
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0px;
+}
+
+h1 {
+    white-space: nowrap; 
+    font-size: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-inline-start: -270px;
+    font-size: 25px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    column-gap: 5px;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    height: 500px;
+    overscroll-behavior: auto;
+}
+
+.Header{
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 0vh;
+    height: 30px;
+    width: 100vw;
+    z-index: 100;
+}
+
+.Picture{
+    top: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    transition: 500ms linear;
+    height: 220px;
+}
+
+.picture-open{
+    height: 410px;
+}
+
+.picture-closed{
+    height: 30px;
+    transition: 500ms linear;
+}
+
+.picBand{    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    transform-origin: center, center;
+    transition: 500ms linear;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px; 
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    width: 100%;
+    margin: 0px;
+    white-space: nowrap;
+}
+
+.picBand:hover{
+    -webkit-text-fill-color:black;
+}
+
+.picBand-top{
+    transform: scale(0.25,0.25);
+    height: 0px;
+    transition: 500ms linear;
+    -webkit-text-stroke: 3px;
+    top: 0px;
+}
+
+.picBand-filled{
+    -webkit-text-fill-color:black;
+    -webkit-text-stroke: 0px;
+}
+
+.picGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 220px;
+    z-index: 4;
+    transition: 500ms linear;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.5;
+    overflow-y: hidden;
+}
+
+.picGrid-flex{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    z-index: 4;
+    height: 220px;
+    transition: 500ms linear;
+}
+
+.picGrid-open{
+    margin-top: 30px;
+    height: 380px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+
+.picGrid-closed{
+    visibility: hidden;
+}
+
+
+.List{
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    top: 250px;
+    height: 220px;
+    width: 100vw;
+    z-index: 100;
+    transition: 500ms linear;
+    background-color: white;
+}
+
+.list-closed{
+    top: 410px;
+    height: 30px;
+    transition: 500ms linear;
+}
+
+.list-open{
+    top: 60px;
+    height: 410px;
+}
+
+
+.listBand{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    z-index: 1000;
+    transition: 500ms linear;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1.5px;
+    white-space: nowrap; 
+    color: rgb(0, 0, 0);
+    margin: 0px;
+    font-size: 100px;
+}
+
+.listBand-closed{
+    top: -40px;
+    transform: scale(0.25,0.25);
+    -webkit-text-stroke: 3px;
+}
+
+.listBand-filled{
+    -webkit-text-fill-color:black;
+    -webkit-text-stroke: 0px;
+}
+
+.listBand:hover{
+    -webkit-text-fill-color:black;
+    -webkit-text-stroke: 0px;
+}
+
+.listList{
+    position: absolute;
+    flex-direction: column;
+    top: 10px;
+    height: 220px;
+    width: 100vw;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.listList-closed{
+    visibility:hidden;
+}
+
+.listList-open{
+    margin-top: 30px;
+    height: 380px;
+    opacity: 1;
+}
+
+.Listeneintrag{
+    border-bottom: 2px solid rgb(200, 200, 200);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Listeninfo{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    color:rgb(68, 68, 68);
+    
+
+}
+
+.pl{
+    position: absolute;
+    text-align: left;
+    left: 10px;
+}
+
+.pm{
+    position: relative;
+    text-align: center;
+    margin: auto;
+}
+
+.pr{
+    position: absolute;
+    text-align: center;
+    right: 10px;
+    
+}
+
+
+.About{
+    display: flex;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+    top: 470px;
+    height: 30px;
+    width: 100vw;
+    z-index: 1000;
+    transition: 500ms linear;
+    background-color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.75px;
+}
+
+.About:hover{
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0px;
+}
+
+.about-open{
+    top: 250px;
+    height: 250px;
+    transition: 500ms linear;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0px;
+}
+
+.aboutText{
+    position: fixed;
+    top: 280px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px;
     text-transform: uppercase;
     text-align: justify;
     text-align-last: left;
