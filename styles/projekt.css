@@ -372,6 +372,8 @@
         justify-content: center;
         top: 475dvh;
         width: 100dvw;
+        background-color: white;
+        z-index:1000;
     }
     
     .About{

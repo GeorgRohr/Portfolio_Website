@@ -91,7 +91,7 @@ h1 {
 .picBand{    
     display: flex;
     justify-content: center;
-    position: relative;
+    position: absolute;
     z-index: 10;
     transform-origin: center, center;
     transition: 500ms linear;
@@ -114,7 +114,7 @@ h1 {
     height: 0dvh;
     transition: 500ms linear;
     -webkit-text-stroke: 3px;
-    top: 3dvh;
+    top: 0dvh;
 }
 
 .picBand-filled{
