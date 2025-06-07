@@ -65,10 +65,10 @@ h1 {
 
 .Picture{
     top: 3dvh;
+    position: fixed;
     align-items: center;
     justify-content: center;
     display: flex;
-    position: fixed;
     z-index: 10;
     transition: 500ms linear;
     overflow-x:hidden;
@@ -85,12 +85,13 @@ h1 {
 .picture-closed{
     height: 6dvh;
     transition: 500ms linear;
+    overflow-y: hidden;
 }
 
 .picBand{    
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     transform-origin: center, center;
     transition: 500ms linear;
@@ -113,7 +114,7 @@ h1 {
     height: 0dvh;
     transition: 500ms linear;
     -webkit-text-stroke: 3px;
-    top: 0dvh;
+    top: 3dvh;
 }
 
 .picBand-filled{
