@@ -98,6 +98,14 @@
         margin-right: 2vh;
     }
     
+    .backModule{
+        position: fixed;
+        text-align: center;
+        justify-content: center;
+        top: 94dvh;
+        width: 100dvw;
+    }
+
     .About{
         font-size: 2vh;
         text-transform: uppercase;
@@ -216,6 +224,14 @@
         margin-right: 2dvh;
     }
     
+    .backModule{
+        position: fixed;
+        text-align: center;
+        justify-content: center;
+        top: 94dvh;
+        width: 100dvw;
+    }
+
     .About{
         font-size: 1dvh;
         text-transform: uppercase;
@@ -349,6 +365,13 @@
         font-weight: 400;
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    .backModule{
+        text-align: center;
+        justify-content: center;
+        top: 475dvh;
+        width: 100dvw;
     }
     
     .About{
