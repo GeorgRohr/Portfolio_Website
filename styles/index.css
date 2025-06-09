@@ -295,7 +295,7 @@ h1 {
 }
 
 .about-open{
-    top: 50dvh;
+    top: 45dvh;
     height: 50dvh;
     transition: 500ms linear;
     -webkit-text-fill-color: black;
@@ -304,7 +304,7 @@ h1 {
 
 .aboutText{
     position: fixed;
-    top: 53dvh;
+    top: 48dvh;
     margin-top: 5px;
     margin-left: 2dvh;
     margin-right: 2dvh;
